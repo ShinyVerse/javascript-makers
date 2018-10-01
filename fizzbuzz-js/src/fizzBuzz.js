@@ -38,4 +38,11 @@ function FizzBuzz() {
       return num;
     }
   }
+  this.playFizzBuzz = function(num) {
+    let fizzbuzzResult = [];
+    for (i = 1; i <= num; i++){
+      fizzbuzzResult.push(this.fizzbuzzNumber(i));
+    }
+    return fizzbuzzResult;
+  }
 }
